@@ -1,30 +1,52 @@
-# Deploying-Web-Application-on-AWS
+# Portfolio Deployment on AWS
 
-Deploying the web application on Amazon Web Services(AWS).Start by setting up a server and securing it.Then transfer the app,s code and make it available to users
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-WORKFLOW:<br>
+## Introduction
 
-1.Preparing deployment requirements.<br>
+This project documents the step-by-step process of deploying a portfolio website on AWS EC2 using the Apache HTTP Server. The portfolio consists of a single HTML file named `s-port.html`, which showcases work and skills.
 
-2.Choosing an appropriate AWS EC2 instance type.<br>
+## Features
 
-3.Initiating the launch of the EC2 instance.<br>
+- Deploy a portfolio website on AWS EC2
+- Configure Apache HTTP Server to serve the `s-port.html` file
+- Secure the server with appropriate security groups
+- Easily accessible portfolio link
 
-4.Configuring security groups for access control.<br>
+## Technologies Used
 
-5.Installing Apache HTTP Server for hosting.<br>
+- AWS EC2
+- Apache HTTP Server
 
-6.Ensuring installation of necessary dependencies.<br>
+## Installation
 
-7.Uploading portfolio files to the EC2 instance.<br>
+1. **Launch AWS EC2 Instance**:
+   - Choose the desired instance type, operating system, and other configuration options.
+   - Allocate appropriate storage and networking resources.
+   - Configure security groups to allow inbound traffic on port 80 (HTTP).
 
-8.Configuring virtual hosts and the web server.<br>
+2. **Connect to EC2 Instance**:
+   - Use SSH to connect to your EC2 instance from your local machine or terminal.
 
-9.Starting the Apache server for web serving.<br>
+3. **Install Apache HTTP Server**:
+   - Update package repositories: `sudo yum update`.
+   - Install Apache HTTP Server: `sudo yum install httpd`.
 
-10.Accessing the portfolio website through a browser.<br>
+4. **Upload Portfolio Files**:
+   - Transfer the `s-port.html` file to the `/var/www/html` directory on the EC2 instance.
 
-Web application which i have deployed:
+5. **Start Apache Server**:
+   - Start the Apache server: `sudo systemctl start httpd`.
+   - Optionally, enable Apache to start on boot: `sudo systemctl enable httpd`.
 
-s-port(portfolio)/s-port.html
+## Usage
+
+Once the deployment is complete, we can access our portfolio website by entering the public IP address or domain name of our AWS EC2 instance in a web browser. The portfolio page (`s-port.html`) will be served by the Apache HTTP Server.
+
+- [Link to Portfolio Page](s-port(portfolio)/s-port.html)
+
+## Conclusion
+
+With the completion of this deployment process, our portfolio website is now successfully hosted on AWS EC2. 
+
+
+
 
