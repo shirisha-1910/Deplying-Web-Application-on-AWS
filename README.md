@@ -2,8 +2,10 @@
 
 Deploying the web application on Amazon Web Services(AWS).Start by setting up a server and securing it.Then transfer the app,s code and make it available to users
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-WORKFLOW:
+WORKFLOW:<br>
+
 1.Preparing deployment requirements.<br>
+========================================
 2.Choosing an appropriate AWS EC2 instance type.<br>
 3.Initiating the launch of the EC2 instance.<br>
 4.Configuring security groups for access control.<br>
